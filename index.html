@@ -4,32 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--bootstrap CSS-->
+<!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--fuentes google-->
-
-    <!--bootstrap-->
-
+<!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!--mi CSS-->
-
+<!--mi CSS-->
     <link rel="stylesheet" href="style.css">
-
     <title>Front End Integrador - Ailén Glassmam</title>
 </head>
 <body>
-        <!--menu superior-->
+<!--menu superior-->
     <header>
-      <!--logo-->
+<!--logo-->
       <div id="logo">
         <img src="img/codoacodo.png" alt="Programa Codo a Codo">
         <p>Conf Bs As</p>
       </div>
-
-      <!--botonera-->
+<!--botonera-->
       <div id="botonera">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
@@ -45,15 +37,14 @@
                     <a class="botones nav-link active" href="#formulario">Conviértete en orador</a>
                   </li>
                 <li class="nav-item">
-                  <a class="botonesp nav-link active">Comprar tickets</a>
+                  <a class="botonesp nav-link active" href="#venta">Comprar tickets</a>
                 </li>
               </ul>
       </div>
-
     </header>
-
-    <!--cuerpo principal-->
+<!--cuerpo principal-->
     <main>
+<!--intro-->
         <section id="intro">
             <div class="contenido">
                 <h1>Conf Bs As</h1>
@@ -61,16 +52,13 @@
                 <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
                 <button type="button" class="btn btn-success">Comprar tickets</button>
             </div>
-
         </section>
-
-        <section id="oradores">
-
+<!--presentacion de oradores-->
+      <section id="oradores">
             <div class="titulos">
                 <h6>Conoce a los</h6>
                 <h2>oradores</h2>
             </div>
-
             <div id="cartas">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -107,15 +95,29 @@
                       </div>
                     </div>
                   </div>
-            </div>
-            
+            </div>   
         </section>
-
+<!--info lugar del evento-->
         <section id="lugar">
             <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-md-6">
-                    <img src="img/honolulu.jpg" class="img-fluid rounded-start" alt="...">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/hawaii.jpg" class="d-block w-100" alt="Hawaii">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hawaii2.jpg" class="d-block w-100" alt="Hawaii 2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/hawaii3.jpg" class="d-block w-100" alt="Hawaii 3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/honolulu.jpg" class="d-block w-100" alt="Ciudad de Honolulu">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="texto col-md-6">
                     <div class="card-body">
@@ -127,15 +129,13 @@
                 </div>
               </div>
         </section>
-
+<!--formulario de inscripción-->
         <section id="formulario">
-
             <div class="titulos">
                 <h6>conviértete en un</h6>
                 <h2>orador</h2>
                 <p>Anótate como orador para dar una <span id="underline">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
             </div>
-
             <div id="form">
                 <form class="row g-3">   
                 <div class="col-md-6">
@@ -143,8 +143,7 @@
                   </div>
                   <div class="col-md-6">
                     <input type="text" class="form-control" id="exampleFormControlInput2" value="" placeholder="Apellido" required>
-                  </div>
-                  
+                  </div> 
                   <div class="col-md-12">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
                     <p><small class="text-muted">Recuerda incluir un título para tu charla</small></p></p>
@@ -152,11 +151,71 @@
                   <input class="btn btn-success" type="submit" value="Enviar">
                 </form>
             </div>
-
         </section>
-
-    </main>
-
+<!--compra de tickets-->
+  <section id="venta">
+    <div id="tickets">
+      <div class="ticket" id="estudiante">
+        <h4>Estudiante</h4>
+        <h5>Tiene un descuento de</h5>
+        <p>80%</p>
+        <p>*Presentar documentación</p>
+      </div>
+      <div class="ticket" id="trainee">
+        <h4>Trainee</h4>
+        <h5>Tiene un descuento de</h5>
+        <p>50%</p>
+        <p>*Presentar documentación</p>
+      </div>
+      <div class="ticket" id="junior">
+        <h4>Junior</h4>
+        <h5>Tiene un descuento de</h5>
+        <p>15%</p>
+        <p>*Presentar documentación</p>
+      </div>
+    </div>
+    <div class="titulos">
+      <h6>Venta</h6>
+      <h2>Valor de Ticket $200</h2>
+    </div>
+    <!--campos de texto del formulario-->
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Nombre" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Apellido" required>
+      </div>
+      <div class="col-12">
+        <input type="email" class="form-control" placeholder="Correo" required>
+      </div>
+      <!--cantidad de tickets-->
+      <div class="col-md-6">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" min="1" name="cantidad" class="form-control" id="cantidad" placeholder="cantidad">
+      </div>
+      <!--categoria de ticket-->
+      <div class="col-md-6">
+        <label for="inputCategoria" class="form-label">Categoría</label>
+        <select id="categoria" class="form-select">
+          <option value="default" selected>Opciones...</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="trainee">Trainee</option>
+          <option value="junior">Junior</option>
+        </select>
+      </div>
+      <!--total a pagar-->
+      <div class="input-group input-group-lg" id="total">
+        <input class="form-control" type="text" disabled readonly id="total">
+      </div>
+      <!--botones reset y submit-->
+      <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+        <button type="reset" class="btn btn-success col-md-6">Borrar</button>
+        <button type="button" class="btn btn-success col-md-6" id="total" onclick="resumenCuenta()">Resumen</button>
+      </div>
+    </form>
+  </section>
+</main>
     <!--footer-->
     <footer>
         <nav>
@@ -171,5 +230,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script type="application/javascript" src="./form.js"></script>   
 </body>
 </html>

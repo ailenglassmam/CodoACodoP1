@@ -1,5 +1,7 @@
   * {
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
   }
 
   body {
@@ -14,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
   }
 
   #logo {
@@ -55,14 +58,7 @@
   .botonesp:hover {
     color: yellowgreen;
   }
-
-  .contenido {
-    width: 45%;
-    margin-left: auto;
-    margin-right: 10rem;
-    text-align:right;
-  }
-
+  
   #intro {
     background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/ba1.jpg);
     height: 100vh;
@@ -70,6 +66,13 @@
     display: flex;
     align-items: center;
     justify-content: right;
+  }
+
+  .contenido {
+    width: 45%;
+    margin-left: auto;
+    margin-right: 10rem;
+    text-align:right;
   }
 
   .contenido h1 {
@@ -90,6 +93,7 @@
   }
 
   .titulos {
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     text-align: center;
   }
@@ -113,6 +117,12 @@
     color: white;
   }
 
+  .carousel-inner img {
+    width: 100%;
+    height: 700px;
+    object-fit:cover;
+}
+
   #formulario {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -123,6 +133,40 @@
 
   #underline {
     border-bottom: 2px dotted black;
+  }
+
+  #venta {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #tickets {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ticket {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #estudiante {
+    border: blue 1px solid;
+  }
+
+  #trainee {
+    border: green 1px solid;
+  }
+
+  #junior {
+  border: gold 1px solid;
   }
 
   footer {
